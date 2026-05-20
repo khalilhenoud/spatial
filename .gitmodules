@@ -1,0 +1,6 @@
+[submodule "external/library"]
+	path = external/library
+	url = https://github.com/khalilhenoud/library.git
+[submodule "external/math"]
+	path = external/math
+	url = https://github.com/khalilhenoud/math.git
