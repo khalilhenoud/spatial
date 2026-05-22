@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2023
  *
  */
-#ifndef SPATIAL_BVH_H
-#define SPATIAL_BVH_H
+#ifndef SPATIAL_BVH_BVH_H
+#define SPATIAL_BVH_BVH_H
 
 #ifdef __cplusplus
 extern "C" {
