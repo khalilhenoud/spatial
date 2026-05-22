@@ -541,17 +541,17 @@ query_intersection_fixed_256(
 
 ////////////////////////////////////////////////////////////////////////////////
 // TODO: Do not register until spatial in entity is removed
-// INITIALIZER(register_bvh_t)
-// {
-//   vtable_t vtable;
-//   memset(&vtable, 0, sizeof(vtable_t));
-//   vtable.fn_def = bvh_def;
-//   vtable.fn_is_def = bvh_is_def;
-//   vtable.fn_serialize = bvh_serialize;
-//   vtable.fn_deserialize = bvh_deserialize;
-//   vtable.fn_type_size = bvh_type_size;
-//   vtable.fn_owns_alloc = bvh_owns_alloc;
-//   vtable.fn_get_alloc = bvh_get_alloc;
-//   vtable.fn_cleanup = bvh_cleanup;
-//   register_type(get_type_id(bvh_t), &vtable);
-// }
+INITIALIZER(register_bvh_t)
+{
+  vtable_t vtable;
+  memset(&vtable, 0, sizeof(vtable_t));
+  vtable.fn_def = bvh_def;
+  vtable.fn_is_def = bvh_is_def;
+  vtable.fn_serialize = bvh_serialize;
+  vtable.fn_deserialize = bvh_deserialize;
+  vtable.fn_type_size = bvh_type_size;
+  vtable.fn_owns_alloc = bvh_owns_alloc;
+  vtable.fn_get_alloc = bvh_get_alloc;
+  vtable.fn_cleanup = bvh_cleanup;
+  register_type(get_type_id(bvh_t), &vtable);
+}
