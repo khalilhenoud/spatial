@@ -540,6 +540,7 @@ query_intersection_fixed_256(
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+// TODO: Do not register until spatial in entity is removed
 INITIALIZER(register_bvh_t)
 {
   vtable_t vtable;
